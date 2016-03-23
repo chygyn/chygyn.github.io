@@ -1,0 +1,115 @@
+<mvc:View controllerName="Leave.view.App" xmlns="sap.m" xmlns:t="sap.ui.table" xmlns:k="sap.ui.commons"
+	xmlns:core="sap.ui.core" xmlns:ui="sap.ui.unified" xmlns:mvc="sap.ui.core.mvc">
+	<VBox>
+		<Image src="./model/logo.jpg" width="10rem" />
+		<FlexBox alignItems="Center" width="80rem" justifyContent="Center">
+			<items>
+				<Label text="Заполните заявку на отпуск" class="myFontSize" />
+			</items>
+		</FlexBox>
+		<FlexBox alignItems="Center" justifyContent="Center" width="83rem">
+			<ui:Calendar id="Calendar" intervalSelection="true"
+				months="2" select="handleCalendarSelect" class="myCal" />
+			<VBox class="myLeaveInfo">
+				<FlexBox alignItems="Center" justifyContent="SpaceBetween"
+					width="auto" class="myPage">
+					<items>
+						<Text text="Отпуск с" />
+						<Text id="selectedDateFrom" text="Выберите значение на календаре" />
+					</items>
+				</FlexBox>
+				<FlexBox alignItems="Center" justifyContent="SpaceBetween"
+					width="auto" class="myPage">
+					<items>
+						<Text text="Отпуск по" />
+						<Text id="selectedDateTo" text="Выберите значение на календаре" />
+					</items>
+				</FlexBox>
+				<FlexBox alignItems="Center" justifyContent="SpaceBetween"
+					width="auto" class="myPage">
+					<items>
+						<Text text="Выберите утверждающего" />
+						<ComboBox id="approver" items="{
+									path:'requests>/Who'
+								}">
+							<core:Item text="{requests>Name}" />
+						</ComboBox>
+					</items>
+				</FlexBox>
+				<FlexBox alignItems="Center" justifyContent="SpaceBetween"
+					width="auto" class="myPage">
+					<items>
+						<Text text="Подразделение" />
+						<Text text="Департамент телемаркетинга" />
+					</items>
+				</FlexBox>
+				<FlexBox alignItems="Center" justifyContent="SpaceBetween"
+					width="auto" class="myPage">
+					<items>
+						<Text text="Выбрано дней" />
+						<Text id="select" text="0" />
+					</items>
+				</FlexBox>
+				<FlexBox alignItems="Center" justifyContent="SpaceBetween"
+					width="auto" class="myPage">
+					<items>
+						<Text text="Доступно дней" />
+						<Text id="res" text="{requests>/Limit}" />
+					</items>
+				</FlexBox>
+				<FlexBox alignItems="Center" justifyContent="SpaceBetween"
+					width="auto" class="myPage">
+					<items>
+						<Button class="myButton" id="add" press="addLeave" text="Отправить"/>
+						<Button class="myButton" id="history" press="handleHistory" text="История заявок"/>
+					</items>
+				</FlexBox>
+				
+			</VBox>
+		</FlexBox>
+<!-- 	<Panel expandable="true" expanded="false" headerText="История заявок" width="60%"> -->
+<!-- 		<content> -->
+<!-- 			<t:Table rows="{requests>/Requests}" id="Leaves" items="{requests>Requests}" -->
+<!-- 			visibleRowCount="3" noData="Значения не найдены"  -->
+<!--     	selectionMode="None" width="50rem"> -->
+<!-- 			<t:columns> -->
+<!-- 				<t:Column width="auto" hAlign="Center"> -->
+<!-- 					<t:label>  -->
+<!-- 						<k:TextView textAlign="Center" text="Дата начала" /> -->
+<!-- 					</t:label> -->
+<!-- 					<t:template> -->
+<!-- 						<k:TextView textAlign="Center" text="{requests>DataSt}" /> -->
+<!-- 					</t:template> -->
+<!-- 				</t:Column> -->
+<!-- 				<t:Column width="auto" hAlign="Center"> -->
+<!-- 					<t:label>  -->
+<!-- 						<k:TextView textAlign="Center" text="Дата окончания" /> -->
+<!-- 					</t:label> -->
+<!-- 					<t:template> -->
+<!-- 						<k:TextView textAlign="Center" text="{requests>DataSt}" /> -->
+<!-- 					</t:template> -->
+<!-- 				</t:Column> -->
+<!-- 				<t:Column width="auto" hAlign="Center"> -->
+<!-- 					<t:label>  -->
+<!-- 						<k:TextView textAlign="Center" text="Согласующий" /> -->
+<!-- 					</t:label> -->
+<!-- 					<t:template> -->
+<!-- 						<k:TextView textAlign="Center" text="{requests>Approver}"/> -->
+<!-- 					</t:template> -->
+<!-- 				</t:Column> -->
+<!-- 				<t:Column width="auto" hAlign="Center"> -->
+<!-- 					<t:label>  -->
+<!-- 						<k:TextView textAlign="Center" text="Статус" /> -->
+<!-- 					</t:label> -->
+<!-- 					<t:template> -->
+<!-- 						<k:TextView textAlign="Center" text="{requests>Status}"/> -->
+<!-- 					</t:template> -->
+<!-- 				</t:Column> -->
+<!-- 			</t:columns> -->
+
+<!-- 		</t:Table> -->
+<!-- 		</content> -->
+<!-- 	</Panel> -->
+	</VBox>
+
+</mvc:View>

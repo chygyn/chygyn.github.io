@@ -1,0 +1,128 @@
+body{
+	margin:initial !important;
+}
+
+/* element.style{ */
+/* 	overglow-x: initial; */
+/* 	overglow-y: initial; */
+/* } */
+
+.myCal{
+	box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Параметры тени */
+    padding: 10px;
+	margin:1rem;
+	
+}
+
+
+.sapMInputBaseInner{
+	border-color:#00985f;
+}
+
+.myButton .sapMBtnInner{
+	background:initial !important;
+	border-color:#00985f;
+}
+
+.myButton .sapMITBSelected>.sapMITBContentArrow {
+    border-color: #00985f;
+}
+
+.myFontSize{
+	font-size: 1rem;
+}
+
+.myLeaveInfo{
+	box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Параметры тени */
+    padding: 10px;
+	margin:5rem;
+	width:25rem;
+	
+}
+
+.myPage{
+	padding-left: 0.2rem;
+	padding-right: 0.2rem;
+	padding-bottom: 1rem;
+}
+
+.myPage.sapMPageHeader::before{
+	border:initial;
+}
+
+.myIntroText .sapMText{
+	font-size: 1.2rem;
+}
+.myITF .sapMITBFilterIcon{
+    border-top-left-radius: initial !important;
+    border-top-right-radius: initial !important;
+    border-bottom-right-radius: initial !important;
+    border-bottom-left-radius: initial !important;
+
+ }
+.sapMShellBG{
+	background-color:#e6e6e6;
+}
+ 
+.myBlock{
+ display: block;
+              width: auto;
+              padding: 15px;
+              margin: 15px auto;
+              background-color:rgba(63,166,149,1);
+              box-shadow: 2px 3px 3px 0 rgba(63,31,0,.5);
+              border-radius: 10px;
+              text-align: center;
+              text-decoration: none;
+ }
+.sapMShellBrandingBar {
+	background-color: initial;
+	height:initial;
+	margin:initial !important;
+}
+
+
+.myTextForInput{
+	margin: 10px;
+}
+
+.mySplitApp .sapMPageHeader::before{
+	border-top: none;	
+}
+.myMasterView .sapMSplitContainerMaster::before{
+	border-right:none;
+}
+.myMasterView:before {
+	content: 
+}
+
+.sapMShellGlobalInnerBackground{
+	background-color: white !important;
+	    background-image: none;
+}
+
+.sapMSplitContainerMaster:before {
+    border-right-color: initial;
+    height: initial;
+    border-right:initial;
+}
+
+/* IconTabBar icons recolor */
+.detailITB .sapMITBSelected .sapMITBFilterDefault {
+    background: #00985f;
+}
+.detailITB.sapMITBTab{
+	width :10rem !important;
+}
+.detailITB .sapMITBFilterIcon{
+ border-color: #00985f;
+}
+.detailITB .sapMITBFilterDefault {
+    color: #00985f;
+}
+.detailITB .sapMITBSelected>.sapMITBContentArrow {
+    border-color: #00985f;
+}
+.detailITB .sapMITBSelected .sapMITBFilterDefault {
+    color: #ffffff;
+}

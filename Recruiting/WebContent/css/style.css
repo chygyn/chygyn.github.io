@@ -1,0 +1,105 @@
+body{
+	margin:initial !important;
+	font-family: roboto,ArialRuble,Arial,sans-serif !important;
+}
+
+.sapMText{
+	font-family: roboto,ArialRuble,Arial,sans-serif;
+}
+
+.myHeader .sapMTitle{
+	font-size:20px;
+	color:#00985f;
+}
+
+.myIntroText .sapMText{
+	font-size: 1.2rem;
+}
+.myITF .sapMITBFilterIcon{
+    border-top-left-radius: initial !important;
+    border-top-right-radius: initial !important;
+    border-bottom-right-radius: initial !important;
+    border-bottom-left-radius: initial !important;
+
+ }
+ 
+.sapMInputBaseInner{
+	border-color: #00985f;
+} 
+ 
+.sapMShellBG{
+	background-color:#e6e6e6;
+}
+ 
+.myBlock{
+ display: block;
+              width: auto;
+              padding: 15px;
+              margin: 15px auto;
+              background-color:rgba(63,166,149,1);
+              box-shadow: 2px 3px 3px 0 rgba(63,31,0,.5);
+              border-radius: 10px;
+              text-align: center;
+              text-decoration: none;
+ }
+.myBody .sapMShellBrandingBar {
+	background-color: initial;
+	height:initial;
+	margin:initial !important;
+}
+
+.myTextForInput{
+	margin: 15px;
+}
+
+.mySplitApp .sapMPageHeader::before{
+	border-top: none;	
+}
+.myMasterView .sapMSplitContainerMaster::before{
+	border-right:none;
+}
+.myMasterView:before {
+	content: 
+}
+
+.sapMShellGlobalInnerBackground{
+	background-color: white !important;
+}
+
+.sapMSplitContainerMaster:before {
+    border-right-color: initial;
+    height: initial;
+    border-right:initial;
+}
+
+/* IconTabBar icons recolor */
+.detailITB .sapMITBSelected .sapMITBFilterDefault {
+    background: #00985f;
+}
+
+.detailITB{
+	border-top-width:0.25rem;
+	border-top-color:#e6e6e6;
+	border-top-style:solid;
+}
+
+.detailITB .sapMITBTab{
+	width: 10.5rem;
+}
+
+.detailITB .sapMITBText{
+	width: 10.5rem;
+}
+
+.detailITB .sapMITBFilterIcon{
+ border-color: #00985f;
+}
+.detailITB .sapMITBFilterDefault {
+    color: #00985f;
+}
+.detailITB .sapMITBSelected>.sapMITBContentArrow {
+    border-color: #00985f;
+}
+.detailITB .sapMITBSelected .sapMITBFilterDefault {
+    color: #ffffff;
+}

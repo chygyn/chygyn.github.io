@@ -1,0 +1,48 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core"
+	xmlns:mvc="sap.ui.core.mvc" xmlns="sap.ui.commons" xmlns:l="sap.ui.commons.layout"
+	xmlns:m="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:form="sap.ui.layout.form"
+	xmlns:u="sap.ui.unified" xmlns:t="sap.ui.table">
+	
+<t:Table rows="{requests>/Requests}" id="Leaves" items="{requests>Requests}"
+			visibleRowCount="{path:'requests>/Requests',
+    formatter:'Leave.utilits.Formatter.tabRows'}" noData="Значения не найдены" 
+    	selectionMode="None" width="50rem">
+			
+			<t:columns>
+				<t:Column width="auto" hAlign="Center">
+					<t:label> 
+						<TextView textAlign="Center" text="Дата начала" />
+					</t:label>
+					<t:template>
+						<TextView textAlign="Center" text="{requests>DataSt}" />
+					</t:template>
+				</t:Column>
+				<t:Column width="auto" hAlign="Center">
+					<t:label> 
+						<TextView textAlign="Center" text="Дата окончания" />
+					</t:label>
+					<t:template>
+						<TextView textAlign="Center" text="{requests>DataSt}" />
+					</t:template>
+				</t:Column>
+				<t:Column width="auto" hAlign="Center">
+					<t:label> 
+						<TextView textAlign="Center" text="Согласующий" />
+					</t:label>
+					<t:template>
+						<TextView textAlign="Center" text="{requests>Approver}"/>
+					</t:template>
+				</t:Column>
+				<t:Column width="auto" hAlign="Center">
+					<t:label> 
+						<TextView textAlign="Center" text="Статус" />
+					</t:label>
+					<t:template>
+						<TextView textAlign="Center" text="{requests>Status}"/>
+					</t:template>
+				</t:Column>
+			</t:columns>
+
+		</t:Table>
+		
+</core:FragmentDefinition>

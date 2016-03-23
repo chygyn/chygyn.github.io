@@ -1,0 +1,10 @@
+<mvc:View
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <Page>
+<!--     	<VBox class="myIntroText"> -->
+<!--     		<Text text="Для просмотра заявки выберите ее из списка заявок"/> -->
+<!--     		<Text text="Для создания заявки кликните на кнопку Добавить"/> -->
+<!--    		</VBox>     -->
+	</Page>
+</mvc:View>
