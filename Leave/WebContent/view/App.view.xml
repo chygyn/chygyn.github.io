@@ -1,7 +1,7 @@
 <mvc:View controllerName="Leave.view.App" xmlns="sap.m"
 	xmlns:t="sap.ui.table" xmlns:k="sap.ui.commons" xmlns:core="sap.ui.core"
 	xmlns:ui="sap.ui.unified" xmlns:mvc="sap.ui.core.mvc" xmlns:l="sap.ui.layout">
-	<Page id="myPage" class="myPage" showHeader="false" width="80%">
+	<Page id="myPage" class="myPage" showHeader="false" width="100rem" height="100rem">
 <!-- 		<content> -->
 
 			<!-- <VBox> -->

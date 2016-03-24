@@ -15,8 +15,11 @@
 		</script>
 		<link rel="stylesheet" type="txt/css" href="css/style.css">
 		<script>
-			new sap.ui.core.ComponentContainer({
-					name : "Leave"
+			new sap.m.Shell({
+				class: "myBody",
+				backgroundColor:"white",
+				app :new sap.ui.core.ComponentContainer({
+					name : "Leave"})
 			}).placeAt("content");
 		</script>
 
