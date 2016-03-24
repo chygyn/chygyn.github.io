@@ -2,10 +2,10 @@ body{
 	margin:initial !important;
 }
 
-/* element.style{ */
-/* 	overglow-x: initial; */
-/* 	overglow-y: initial; */
-/* } */
+.sapMPage>section{
+	overflow-x: initial !important;
+	overflow-y: initial !important;
+}
 
 .myCal{
 	box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Параметры тени */
@@ -35,15 +35,22 @@ body{
 .myLeaveInfo{
 	box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Параметры тени */
     padding: 10px;
-	margin:5rem;
+	margin-top:1rem;
+	margin-left:1rem;
+	margin-bottom:5rem;
+	margin-right:5rem;
 	width:25rem;
 	
 }
-
+.sapUiBodyBackground, .sapUiBody{
+	background-image:initial;
+	background-color: initial;
+}
 .myPage{
 	padding-left: 0.2rem;
 	padding-right: 0.2rem;
 	padding-bottom: 1rem;
+	
 }
 
 .myPage.sapMPageHeader::before{

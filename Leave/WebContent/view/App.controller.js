@@ -6,6 +6,14 @@ sap.ui.define(['sap/ui/core/mvc/Controller','sap/ui/unified/DateRange','sap/m/Me
 	var calendar = Controller.extend("Leave.view.App", {
 		oFormatYyyymmdd: null,
 		
+		onAfterRendering : function(){
+			var oPage = this.getView().byId("myPage");
+			var oCal = this.getView().byId("Calendar");
+			if(oPage.$().width() < 500){
+				oCal.setMonths(1);
+			}
+		},
+		
 		handleHistory : function(evt){
 			var oView = this.getView();
 			var oModel=oView.getModel("requests");

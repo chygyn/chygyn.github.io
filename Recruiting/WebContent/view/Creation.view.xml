@@ -1,80 +1,94 @@
 <core:View controllerName="evola.recruiting.view.Creation"
 	xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:l="sap.ui.layout">
 	<Page title="Создание заявки" class="myHeader">
+	<ScrollContainer 
+	busy="false"
+	busyIndicatorDelay="1000"
+	visible="true"
+	fieldGroupIds=""
+	width="auto"
+	height="auto"
+	horizontal="true"
+	vertical="false"
+	focusable="true"
+	validateFieldGroup="">
 
-		<FlexBox alignItems="Center" justifyContent="Center" width="65rem">
+
+
+		<FlexBox alignItems="Center" justifyContent="Center" width="auto">
 			<VBox>
 				<FlexBox alignItems="Center" justifyContent="SpaceBetween"
-					width="26rem">
+					width="auto">
 					<items>
 						<Text text="Название вакансии*" class="myTextForInput" />
-						<Input value="" width="17rem" id="Name"/>
+						<Input value="" width="auto" id="Name"/>
 					</items>
 				</FlexBox>
 				<FlexBox alignItems="Center" justifyContent="SpaceBetween"
-					width="26rem">
+					width="auto">
 					<items>
 						<Text text="Плановая дата*" class="myTextForInput" />
 						<DatePicker id="date" placeholder="Введите дату.." change="handleChange"
-							width="17rem" />
+							width="auto" />
 					</items>
 				</FlexBox>
 				<FlexBox alignItems="Center" justifyContent="SpaceBetween"
-					width="26rem">
+					width="auto">
 					<items>
-						<Text text="Линейный руководитель" class="myTextForInput" />
-						<Text text="Семёнов Игорь Викторович" class="myTextForInput" />
+						<Text text="Линейный руководитель" class="myTextForInput" width="auto"/>
+						<Text text="Семёнов Игорь Викторович" class="myTextForInput" width="auto"/>
 					</items>
 				</FlexBox>
 				<FlexBox alignItems="Center" justifyContent="SpaceBetween"
-					width="26rem">
+					width="auto">
 					<items>
-						<Text text="Вышестоящий руководитель" class="myTextForInput" />
-						<Text text="Афансьев Андрей Фёдорович" class="myTextForInput" />
+						<Text text="Вышестоящий руководитель" class="myTextForInput" width="auto"/>
+						<Text text="Афансьев Андрей Фёдорович" class="myTextForInput" width="auto"/>
 					</items>
 				</FlexBox>
 			</VBox>
 			<VBox>
 				<FlexBox alignItems="Center" justifyContent="SpaceBetween"
-					width="26rem">
+					width="auto">
 					<items>
 						<Text text="Вид договора" class="myTextForInput" />
-						<Input value="" id="type" width="17rem" />
+						<Input value="" id="type" width="auto" />
+
 					</items>
 				</FlexBox>
 				<FlexBox alignItems="Center" justifyContent="SpaceBetween"
-					width="26rem">
+					width="auto">
 					<items>
 						<Text text="Штатная должность*" class="myTextForInput" />
 						<ComboBox id="positions" items="{
 									path:'requests>/Positions'
 								}"
-							width="17rem">
+							width="auto">
 							<core:Item text="{requests>Name}" />
 						</ComboBox>
 
 					</items>
 				</FlexBox>
 				<FlexBox alignItems="Center" justifyContent="SpaceBetween"
-					width="26rem">
+					width="auto">
 					<items>
 						<Text text="Отрасль" class="myTextForInput" />
 						<ComboBox id="Branch" items="{
 									path:'requests>/Branches'
 								}"
-							width="17rem">
+							width="auto">
 							<core:Item text="{requests>Name}" />
 						</ComboBox>
 					</items>
 				</FlexBox>
 				<FlexBox alignItems="Center" justifyContent="SpaceBetween"
-					width="26rem">
+					width="auto">
 					<items>
 						<Text text="Функциональная сфера" class="myTextForInput" />
 						<ComboBox id="Sphere" items="{
 									path:'requests>/Spheres'
 								}"
-							width="17rem">
+							width="auto">
 							<core:Item text="{requests>Name}" />
 						</ComboBox>
 					</items>
@@ -82,6 +96,7 @@
 				
 			</VBox>
 		</FlexBox>
+		</ScrollContainer>
 		<Panel expandable="true" expanded="true" headerText="Обоснование вакансии"
 			width="auto">
 			<content>
@@ -230,6 +245,7 @@
 		<!-- </CustomListItem> -->
 
 		<!-- </List> -->
+		
 		<footer>
 			<Bar>
 				<contentRight>
@@ -240,5 +256,6 @@
 				</contentRight>
 			</Bar>
 		</footer>
+	
 	</Page>
 </core:View>
