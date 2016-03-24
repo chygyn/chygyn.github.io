@@ -140,11 +140,15 @@ sap.ui
 															.byId("Calendar")
 															.removeSelectedDate();
 												}
-											} else {
-												sap.m.MessageToast
-														.show("Вы не выбрали дату и утверждающего");
-											}
-										},
+											} else {if (sDateSt === "Выберите день в календаре") {sap.m.MessageToast.show("Вы не выбрали дату");
+												} else {if (sDateEn === "Дата не выбрана") {sap.m.MessageToast.show("Вы не выбрали дату");}
+													else{ if (sApprover == null) {sap.m.MessageToast.show("Вы не выбрали утверждающего");} }
+													
+														
+													}
+												}
+
+											},
 
 										onInit : function() {
 											this.oFormatYyyymmdd = sap.ui.core.format.DateFormat
@@ -237,17 +241,17 @@ sap.ui
 
 										_selectWeekInterval : function(iDays) {
 											var oCurrent = new Date(); // get
-																		// current
-																		// date
+											// current
+											// date
 											var iWeekstart = oCurrent.getDate()
 													- oCurrent.getDay() + 1;
 											var iWeekend = iWeekstart + iDays; // end
-																				// day
-																				// is
-																				// the
-																				// first
-																				// day
-																				// + 6
+											// day
+											// is
+											// the
+											// first
+											// day
+											// + 6
 											var oMonday = new Date(oCurrent
 													.setDate(iWeekstart));
 											var oSunday = new Date(oCurrent

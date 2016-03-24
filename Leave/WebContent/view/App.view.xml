@@ -27,21 +27,21 @@
 						<FlexBox alignItems="Center" justifyContent="SpaceBetween"
 							width="auto" class="myPage">
 							<items>
-								<Text text="Отпуск с" />
+								<Text text="Отпуск с *" />
 								<Text id="selectedDateFrom" text="Выберите день в календаре" />
 							</items>
 						</FlexBox>
 						<FlexBox alignItems="Center" justifyContent="SpaceBetween"
 							width="auto" class="myPage">
 							<items>
-								<Text text="Отпуск по" />
+								<Text text="Отпуск по *" />
 								<Text id="selectedDateTo" text="Выберите день в календаре" />
 							</items>
 						</FlexBox>
 						<FlexBox alignItems="Center" justifyContent="SpaceBetween"
 							width="auto" class="myPage">
 							<items>
-								<Text text="Утверждающий" width="120px"/>
+								<Text text="Утверждающий *" width="120px"/>
 								<ComboBox id="approver" selectionChange="handleChange"
 									items="{
 									path:'requests>/Who'
