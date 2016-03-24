@@ -6,7 +6,7 @@
 <t:Table rows="{requests>/Requests}" id="Leaves" items="{requests>Requests}"
 			visibleRowCount="{path:'requests>/Requests',
     formatter:'Leave.utilits.Formatter.tabRows'}" noData="Значения не найдены" 
-    	selectionMode="None" width="50rem">
+    	selectionMode="None" width="auto">
 			
 			<t:columns>
 				<t:Column width="auto" hAlign="Center">
