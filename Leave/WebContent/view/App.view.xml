@@ -41,8 +41,8 @@
 						<FlexBox alignItems="Center" justifyContent="SpaceBetween"
 							width="auto" class="myPage">
 							<items>
-								<Text text="Утверждающий" />
-								<ComboBox id="approver"
+								<Text text="Утверждающий" width="120px"/>
+								<ComboBox id="approver" 
 									items="{
 									path:'requests>/Who'
 								}">

@@ -23,6 +23,7 @@ sap.ui.define(['sap/ui/core/mvc/Controller','sap/ui/unified/DateRange','sap/m/Me
 			var historyDialog = new sap.m.Dialog({
 				title:"История заявок",
 				height: "100%",
+				width:"100%",
 				content: [ sap.ui.xmlfragment("Leave.view.Frag", this) ],
 				beginButton : new sap.m.Button({
 					text : 'ОК',

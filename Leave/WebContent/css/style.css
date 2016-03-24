@@ -2,6 +2,10 @@ body{
 	margin:initial !important;
 }
 
+.sapUiBLy{
+	position:fixed;
+}
+
 .sapMPage>section{
 	overflow-x: initial !important;
 	overflow-y: initial !important;
