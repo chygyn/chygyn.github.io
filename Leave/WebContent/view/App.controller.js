@@ -9,7 +9,8 @@ sap.ui.define(['sap/ui/core/mvc/Controller','sap/ui/unified/DateRange','sap/m/Me
 		onAfterRendering : function(){
 			var oPage = this.getView().byId("myPage");
 			var oCal = this.getView().byId("Calendar");
-			this.getView().byId("history")
+			this.getView().byId("history");
+			$('#approver').blur();
 			var oBlock=this.getView().byId("blockInput");
 			if(oPage.$().width() < 500){
 				oCal.setMonths(1);
