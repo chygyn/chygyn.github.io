@@ -1,8 +1,9 @@
 <mvc:View controllerName="Leave.view.App" xmlns="sap.m"
 	xmlns:t="sap.ui.table" xmlns:k="sap.ui.commons" xmlns:core="sap.ui.core"
 	xmlns:ui="sap.ui.unified" xmlns:mvc="sap.ui.core.mvc" xmlns:l="sap.ui.layout">
-	<Page id="myPage" class="myPage" showHeader="false" width="100rem" height="100rem">
-<!-- 		<content> -->
+		
+	<Page id="myPage"  showHeader="false" >
+<!-- 			<content> -->
 
 			<!-- <VBox> -->
 			<Image src="./model/logo.jpg" width="10rem" />
@@ -22,7 +23,7 @@
 <!-- 								linebreakM="true" linebreakS="true" /> -->
 						</ui:layoutData>
 					</ui:Calendar>
-					<VBox class="myLeaveInfo">
+					<VBox class="myLeaveInfo" id="blockInput">
 						<FlexBox alignItems="Center" justifyContent="SpaceBetween"
 							width="auto" class="myPage">
 							<items>
@@ -87,5 +88,7 @@
 			</l:Grid>
 <!-- 		</content> -->
 <!-- 	</HBox> -->
+
 	</Page>
+
 </mvc:View>
