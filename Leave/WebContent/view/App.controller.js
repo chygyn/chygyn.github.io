@@ -6,6 +6,14 @@ sap.ui.define(['sap/ui/core/mvc/Controller','sap/ui/unified/DateRange','sap/m/Me
 	var calendar = Controller.extend("Leave.view.App", {
 		oFormatYyyymmdd: null,
 		
+		handleChange : function(){
+			var sSelCombo = this.getView().byId("approver").getSelectedItem().getText();
+			document.getElementById("app--approver-inner").readOnly=false;
+			document.getElementById("app--approver-inner").value=sSelCombo;
+			document.getElementById("app--approver-inner").readOnly=true;
+			
+		},
+		
 		onAfterRendering : function(){
 			var oPage = this.getView().byId("myPage");
 			var oCal = this.getView().byId("Calendar");
@@ -16,7 +24,7 @@ sap.ui.define(['sap/ui/core/mvc/Controller','sap/ui/unified/DateRange','sap/m/Me
 //					{
 //					$('#approver').blur();
 //					});
-			oCombo.onAfterRendering = function(){document.getElementById("app--approver-inner").disabled=true;}
+			oCombo.onAfterRendering = function(){document.getElementById("app--approver-inner").readOnly=true;}
 			
 			var oBlock=this.getView().byId("blockInput");
 			if(oPage.$().width() < 500){
