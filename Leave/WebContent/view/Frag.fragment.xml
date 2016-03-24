@@ -7,7 +7,7 @@
 			visibleRowCount="{path:'requests>/Requests',
     formatter:'Leave.utilits.Formatter.tabRows'}" noData="Значения не найдены" 
     	selectionMode="None" width="auto">
-			
+				
 			<t:columns>
 				<t:Column width="auto" hAlign="Center">
 					<t:label> 
@@ -25,14 +25,14 @@
 						<TextView textAlign="Center" text="{requests>DataSt}" />
 					</t:template>
 				</t:Column>
-				<t:Column width="auto" hAlign="Center">
-					<t:label> 
-						<TextView textAlign="Center" text="Согласующий" />
-					</t:label>
-					<t:template>
-						<TextView textAlign="Center" text="{requests>Approver}"/>
-					</t:template>
-				</t:Column>
+<!-- 				<t:Column width="auto" hAlign="Center"> -->
+<!-- 					<t:label>  -->
+<!-- 						<TextView textAlign="Center" text="Согласующий" /> -->
+<!-- 					</t:label> -->
+<!-- 					<t:template> -->
+<!-- 						<TextView textAlign="Center" text="{requests>Approver}"/> -->
+<!-- 					</t:template> -->
+<!-- 				</t:Column> -->
 				<t:Column width="auto" hAlign="Center">
 					<t:label> 
 						<TextView textAlign="Center" text="Статус" />

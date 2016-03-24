@@ -9,10 +9,11 @@ sap.ui.define(['sap/ui/core/mvc/Controller','sap/ui/unified/DateRange','sap/m/Me
 		onAfterRendering : function(){
 			var oPage = this.getView().byId("myPage");
 			var oCal = this.getView().byId("Calendar");
+			this.getView().byId("history")
 			var oBlock=this.getView().byId("blockInput");
 			if(oPage.$().width() < 500){
 				oCal.setMonths(1);
-				oBlock.setWidth("275px");
+				oBlock.setWidth("285px");
 			}
 		},
 		
@@ -21,13 +22,14 @@ sap.ui.define(['sap/ui/core/mvc/Controller','sap/ui/unified/DateRange','sap/m/Me
 			var oModel=oView.getModel("requests");
 			var historyDialog = new sap.m.Dialog({
 				title:"История заявок",
+				height: "100%",
 				content: [ sap.ui.xmlfragment("Leave.view.Frag", this) ],
 				beginButton : new sap.m.Button({
 					text : 'ОК',
 					press : function() {
 						historyDialog.close();
 					}
-				}),
+				}).addEventDelegate({onAfterRendering:function(){beginButton.focus();}}),
 				afterClose: function(){
 					historyDialog.destroy();
 				}

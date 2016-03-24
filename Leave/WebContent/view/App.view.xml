@@ -28,14 +28,14 @@
 							width="auto" class="myPage">
 							<items>
 								<Text text="Отпуск с" />
-								<Text id="selectedDateFrom" text="Выберите значение на календаре" />
+								<Text id="selectedDateFrom" text="Выберите день в календаре" />
 							</items>
 						</FlexBox>
 						<FlexBox alignItems="Center" justifyContent="SpaceBetween"
 							width="auto" class="myPage">
 							<items>
 								<Text text="Отпуск по" />
-								<Text id="selectedDateTo" text="Выберите значение на календаре" />
+								<Text id="selectedDateTo" text="Выберите день в календаре" />
 							</items>
 						</FlexBox>
 						<FlexBox alignItems="Center" justifyContent="SpaceBetween"
@@ -51,10 +51,10 @@
 							</items>
 						</FlexBox>
 						<FlexBox alignItems="Center" justifyContent="SpaceBetween"
-							width="auto" class="myPage">
+							width="100%" class="myPage">
 							<items>
 								<Text text="Подразделение" />
-								<Text text="Департамент телемаркетинга" />
+								<Text text="Телемаркетинг" />
 							</items>
 						</FlexBox>
 						<FlexBox alignItems="Center" justifyContent="SpaceBetween"
