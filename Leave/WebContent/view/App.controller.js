@@ -10,7 +10,12 @@ sap.ui.define(['sap/ui/core/mvc/Controller','sap/ui/unified/DateRange','sap/m/Me
 			var oPage = this.getView().byId("myPage");
 			var oCal = this.getView().byId("Calendar");
 			this.getView().byId("history");
-			$('#approver').blur();
+			var oCombo= this.getView().byId("approver");
+			oCombo.attachBrowserEvent("click",
+					function (e)
+					{
+					$('#approver').blur();
+					});
 			var oBlock=this.getView().byId("blockInput");
 			if(oPage.$().width() < 500){
 				oCal.setMonths(1);
