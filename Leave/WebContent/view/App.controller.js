@@ -16,7 +16,7 @@ sap.ui.define(['sap/ui/core/mvc/Controller','sap/ui/unified/DateRange','sap/m/Me
 					{
 					$('#approver').blur();
 					});
-			document.getElementById("app--approver").disabled=true;
+			document.getElementById("app--approver-inner").disabled=true;
 			var oBlock=this.getView().byId("blockInput");
 			if(oPage.$().width() < 500){
 				oCal.setMonths(1);
