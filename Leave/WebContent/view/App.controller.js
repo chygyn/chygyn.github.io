@@ -29,7 +29,7 @@ sap.ui.define(['sap/ui/core/mvc/Controller','sap/ui/unified/DateRange','sap/m/Me
 					press : function() {
 						historyDialog.close();
 					}
-				}).addEventDelegate({onAfterRendering:function(){beginButton.focus();}}),
+				}),
 				afterClose: function(){
 					historyDialog.destroy();
 				}
