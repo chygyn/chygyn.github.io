@@ -48,8 +48,8 @@
 				<FlexBox alignItems="Center" justifyContent="SpaceBetween"
 					width="30rem">
 					<items>
-						<Text text="Функциональная сфера" class="myTextForInput" />
-						<Text text="{requests>Sphere}" class="myTextForInput"/>
+						<Text text="Плановая дата" class="myTextForInput" />
+						<Text text="{requests>Date}" class="myTextForInput"/>
 					</items>
 				</FlexBox>
 				<FlexBox alignItems="Center" justifyContent="SpaceBetween"
@@ -58,12 +58,12 @@
 						<Text text="Вид договора" class="myTextForInput" />
 						<Text text="{requests>Type}" class="myTextForInput"/>
 					</items>
-				</FlexBox>
+				</FlexBox>				
 				<FlexBox alignItems="Center" justifyContent="SpaceBetween"
 					width="30rem">
 					<items>
-						<Text text="Плановая дата" class="myTextForInput" />
-						<Text text="{requests>Date}" class="myTextForInput"/>
+						<Text text="Функциональная сфера" class="myTextForInput" />
+						<Text text="{requests>Sphere}" class="myTextForInput"/>
 					</items>
 				</FlexBox>
 				<FlexBox alignItems="Center" justifyContent="SpaceBetween"
@@ -117,6 +117,13 @@
 						<items>
 							<Text text="Вид образования" class="myTextForInput" />
 							<Text text="{requests>Educ}" />
+						</items>
+					</FlexBox>
+					<FlexBox alignItems="Center" justifyContent="SpaceBetween"
+						width="auto">
+						<items>
+							<Text text="Направленность образования" class="myTextForInput" />
+							<Text text="{requests>NaprEduc}" />
 						</items>
 					</FlexBox>
 					<FlexBox alignItems="Center" justifyContent="SpaceBetween"

@@ -140,21 +140,38 @@
 						width="36rem">
 						<items>
 							<Text text="Вид образования" class="myTextForInput" />
-							<Input value="" id="educ" width="12rem" />
+							<ComboBox id="TypeEduc" items="{
+									path:'requests>/TypeEduc'
+								}"
+							width="auto">
+								<core:Item text="{requests>Name}" />
+							</ComboBox>
+						</items>
+					</FlexBox>
+					<FlexBox alignItems="Center" justifyContent="SpaceBetween"
+						width="36rem">
+						<items>
+							<Text text="Направленность образования" class="myTextForInput" />
+							<ComboBox id="NaprEduc" items="{
+									path:'requests>/NaprEduc'
+								}"
+							width="auto">
+								<core:Item text="{requests>Name}" />
+							</ComboBox>
 						</items>
 					</FlexBox>
 					<FlexBox alignItems="Center" justifyContent="SpaceBetween"
 						width="36rem">
 						<items>
 							<Text text="Специальная подготовка" class="myTextForInput" />
-							<Input value="" id="spec" width="12rem" />
+							<Input value="" id="spec" width="232px" />
 						</items>
 					</FlexBox>
 					<FlexBox alignItems="Center" justifyContent="SpaceBetween"
 						width="36rem">
 						<items>
 							<Text text="Опыт работы" class="myTextForInput" />
-							<Input value="" id="exp" width="12rem" />
+							<Input value="" id="exp" width="232px" />
 						</items>
 					</FlexBox>
 				</VBox>

@@ -34,7 +34,12 @@ sap.ui.controller("evola.recruiting.view.Creation",{
 		var sFio= oView.byId("fio").getValue();
 		var sWhy= oView.byId("why").getValue();
 		var sFunc= oView.byId("func").getValue();
-		var sEduc= oView.byId("educ").getValue();
+		var Educ= oView.byId("TypeEduc").getSelectedItem();
+		var sEduc = "";
+		if (Educ!==null){sEduc=Educ.getText();}
+		var NaprEduc= oView.byId("NaprEduc").getSelectedItem();
+		var sNaprEduc = "";
+		if (NaprEduc!==null){sNaprEduc=NaprEduc.getText();}
 		var sSpec= oView.byId("spec").getValue();
 		var sExp= oView.byId("exp").getValue();
 		var sMust_k= oView.byId("must_k").getValue();
@@ -69,6 +74,7 @@ sap.ui.controller("evola.recruiting.view.Creation",{
 					"Why":sWhy,
 					"Func":sFunc,
 					"Educ":sEduc,
+					"NaprEduc":sNaprEduc,
 					"Spec":sSpec,
 					"Exp":sExp,
 					"Must_k":sMust_k,
