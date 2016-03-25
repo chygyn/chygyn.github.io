@@ -2,6 +2,10 @@ body{
 	margin:initial !important;
 }
 
+.sapUiPopupWithPadding .sapMDialogScrollCont{
+	padding:initial;
+}
+
 .sapUiBLy{
 	position:fixed;
 }
