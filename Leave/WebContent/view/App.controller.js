@@ -57,7 +57,7 @@ sap.ui
 													"blockInput");
 											if (oPage.$().width() < 500) {
 												oCal.setMonths(1);
-												oBlock.setWidth("290px");
+												oBlock.setWidth("300px");
 											}
 										},
 

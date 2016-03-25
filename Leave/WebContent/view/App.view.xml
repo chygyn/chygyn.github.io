@@ -42,7 +42,7 @@
 							width="100%" class="myPage">
 							<items>
 								<Text text="Утверждающий" width="110px"/>
-								<ComboBox id="approver" selectionChange="handleChange" width="180px"
+								<ComboBox id="approver" selectionChange="handleChange" width="170px"
 									items="{
 									path:'requests>/Who'
 								}">

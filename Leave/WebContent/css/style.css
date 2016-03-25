@@ -10,6 +10,10 @@ body{
 	position:fixed;
 }
 
+.sapMComboBoxBaseArrow{
+	width:2rem;
+}
+
 .sapMPage>section{
 	overflow-x: initial !important;
 	overflow-y: initial !important;
@@ -41,6 +45,13 @@ body{
 .myButton .sapMITBSelected>.sapMITBContentArrow {
     border-color: #00985f;
 }
+input.sapMComboBoxBaseInputInner:not(.sapMComboBoxBaseInputInnerReadonly){
+	padding-right:1rem;
+}
+
+.sapMComboBoxBaseArrow{
+	widht:2rem;	
+}
 
 .myFontSize{
 	font-size: 1rem;
@@ -48,12 +59,12 @@ body{
 
 .myLeaveInfo{
 	box-shadow: 0 0 8px rgba(0,0,0,0.5); /* Параметры тени */
-    padding: 8px;
+    padding: 4px;
 	margin-top:8px;
 	margin-left:8px;
 	margin-bottom:8px;
 	margin-right:8px;
-	width:auto;
+	width:420px;
 	
 }
 .sapUiBodyBackground, .sapUiBody{
