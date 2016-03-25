@@ -57,7 +57,7 @@ sap.ui
 													"blockInput");
 											if (oPage.$().width() < 500) {
 												oCal.setMonths(1);
-												oBlock.setWidth("285px");
+												oBlock.setWidth("290px");
 											}
 										},
 
@@ -126,7 +126,7 @@ sap.ui
 														"ReqId" : curId,
 														"DataSt" : sDateSt,
 														"DataEn" : sDateEn,
-														"Status" : "На утверждении",
+														"Status" : "В работе",
 														"Approver" : sApprover
 																.getProperty("text")
 													};
