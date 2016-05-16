@@ -1,49 +1,57 @@
 <!DOCTYPE HTML>
 <html>
-	<head>
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta http-equiv='Content-Type' content='text/html;charset=UTF-8'/>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta http-equiv='Content-Type' content='text/html;charset=UTF-8' />
 
-		<script id="sap-ui-bootstrap"
-				src="https://sapui5.hana.ondemand.com/1.28.21/resources/sap-ui-core.js"
-				data-sap-ui-libs="sap.m, sap.ui.layout"
-				data-sap-ui-theme="sap_bluecrystal">
-		</script>
-		<!-- only load the mobile lib "sap.m" and the "sap_bluecrystal" theme -->
-
-		<script>
-				sap.ui.localResources("demo_app");
-				var app = new sap.m.App({initialPage:"idMain1"});
-				var page = sap.ui.view({id:"idMain1", viewName:"demo_app.Main", type:sap.ui.core.mvc.ViewType.XML});
-				app.addPage(page);
-				app.placeAt("content");
-		</script>
-
-	</head>
-	<body class="sapUiBody" role="application">
-	<script>
-  window.fbAsyncInit = function() {
-    FB.init({
-      appId      : '1535377550103720',
-      xfbml      : true,
-      version    : 'v2.6'
-    });
-  };
-
-  (function(d, s, id){
-     var js, fjs = d.getElementsByTagName(s)[0];
-     if (d.getElementById(id)) {return;}
-     js = d.createElement(s); js.id = id;
-     js.src = "//connect.facebook.net/en_US/sdk.js";
-     fjs.parentNode.insertBefore(js, fjs);
-   }(document, 'script', 'facebook-jssdk'));
+<script id="sap-ui-bootstrap"
+	src="https://sapui5.hana.ondemand.com/1.28.21/resources/sap-ui-core.js"
+	data-sap-ui-libs="sap.m, sap.ui.layout"
+	data-sap-ui-theme="sap_bluecrystal">
+	
 </script>
-		<div id="content"></div>
-		<div
-  class="fb-like"
-  data-share="true"
-  data-width="450"
-  data-show-faces="true">
-</div>
-	</body>
+<!-- only load the mobile lib "sap.m" and the "sap_bluecrystal" theme -->
+
+<script>
+	sap.ui.localResources("demo_app");
+	var app = new sap.m.App({
+		initialPage : "idMain1"
+	});
+	var page = sap.ui.view({
+		id : "idMain1",
+		viewName : "demo_app.Main",
+		type : sap.ui.core.mvc.ViewType.XML
+	});
+	app.addPage(page);
+	app.placeAt("content");
+</script>
+
+</head>
+<body class="sapUiBody" role="application">
+	<script>
+		window.fbAsyncInit = function() {
+			FB.init({
+				appId : '1535377550103720',
+				xfbml : true,
+				version : 'v2.6'
+			});
+		};
+
+		(function(d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) {
+				return;
+			}
+			js = d.createElement(s);
+			js.id = id;
+			js.src = "//connect.facebook.net/en_US/sdk.js";
+			fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+	</script>
+	<div class="fb-like" data-share="true" data-width="450"
+		data-show-faces="true"></div>
+
+	<div id="content"></div>
+
+</body>
 </html>
