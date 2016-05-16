@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<chip xmlns="http://schemas.sap.com/sapui2/services/Chip/1">
+  <implementation>
+    <sapui5>
+      <viewName>demo_app.main.view.xml</viewName>
+    </sapui5>
+  </implementation>
+  <appearance>
+    <title>Demo lolo</title>
+    <description>Demo lolo</description>
+  </appearance>
+  <contracts>
+    <consume id='configuration'>
+      <parameters>
+        <parameter name="row">1</parameter>
+        <parameter name="col">1</parameter>
+      </parameters>
+    </consume>
+    <consume id="fullscreen" />
+    <consume id="navigation" />
+    <consume id="refresh" />
+  </contracts>
+  <parameters>
+    <parameter name="xssCatalog">ALL</parameter>
+  </parameters>
+</chip>
